@@ -78,6 +78,27 @@ Now, add in another `<h2>` header that contains the words "About Me".
 #### Addition 6
 Final addition: put in a small paragraph (`<p> ... </p>`) that describes you! It doesn't have to be much, even a single line will do.
 
+In the end, your code should look something like this:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Website Title</title>
+</head>
+<body>
+  <h1> Website Title </title>
+  <a href="https://operationspark.org/"> Taught By </a>
+  <h2> Your name </h2>
+  <img src="image url">
+  <h2> About Me </h2>
+  <p> Stuff about you </p>
+</body>
+</html>
+```
+
 ## Lesson 2 Steps
 Today's lesson steps will help you divide your website into different sections. You'll also add in a few more bits of content and turn you image into a link, all to make your website a bit more engaging!
 
