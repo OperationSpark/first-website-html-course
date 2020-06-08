@@ -15,6 +15,9 @@ This project walks through the creation of a nice-looking personal website over 
     - [TODO 2: Nav Section](#todo-2-nav-section)
     - [TODO 3: Main Section](#todo-3-main-section)
     - [TODO 4: Image Link](#todo-4-image-link)
+- [Lesson 3 Steps](#lesson-3-steps)
+    - [TODO 1: Update Nav Section](#todo-1-update-nav-section)
+    - [TODO 2: Interests Section](#todo-2-interests-section)
 
 ## Preliminary 
 
@@ -73,7 +76,7 @@ This is your website, so your name should be on here in big letters. Use `<h2> .
 Next, a good website should have picture, right? Go ahead and use an `<img src="image url">` tag to embed an image into your website. Feel free to do a Google search to find one that you want. When you find an image, you need to right click on it, then select "copy image address", then paste that URL into your HTML as the "image url".
 
 #### Addition 5
-Now, add in another `<h2>` header that contains the words "About Me".
+Now, add in another **h2** header that contains the words "About Me".
 
 #### Addition 6
 Final addition: put in a small paragraph (`<p> ... </p>`) that describes you! It doesn't have to be much, even a single line will do.
@@ -128,7 +131,7 @@ After you've done that, add in another anchor tag to the nav area. This new anch
     <div>
         <nav>
             <h1> Your header </h1>
-            <a href="opspark url"> opspark </a>
+            <a href="https://operationspark.org"> Taught By </a>
             <a href="https://jsbin.com"> JS Bin </a>
         </nav>
 
@@ -191,3 +194,52 @@ Next, add something a little fun into your website. Go ahead and turn your image
     <img src="url to image"> 
 </a>
 ```
+
+## Lesson 3 Steps
+Today's lesson is all about adding in some lists to your website. One will be an interests list, and one will be a navigation list. You already have the pieces of the navigation list, so you'll work on that first.
+
+### TODO 1: Update Nav Section
+The first thing you'll want to do is put `<ul> ... </ul>` tags around your anchor tags in your nav area. Once you've done that, put `<li> ... </li>` tags around each anchor. Your result should look similar to:
+
+```html
+<nav>
+    <h1> Your header </h1>
+    <ul>
+        <li> <a href="https://operationspark.org"> Taught By </a> </li>
+        <li> <a href="https://jsbin.com"> JS Bin </a> </li>
+    </ul>
+</nav>
+```
+
+### TODO 2: Interests Section
+The last new thing you'll need to do today is create a new section in your "about" area. This will done is several steps.
+
+#### Step 1:
+Put custom `<section> ... </section>` tags inside of your "about" div. Make it look like this:
+
+```https
+<div id="about">
+    <section>
+    </section>
+</div>
+``` 
+
+#### Step 2:
+Put an **h3** header inside of your **section** with the text "Interests"
+
+#### Step 3:
+Put in `<ul> ... </ul>` tags just below the **h3** header. Give the opening `<ul>` tag an id of "id=interests".
+
+#### Step 4:
+Lastly, put at least 3 **li** tags inside your **ul**, and use them to list some of your interests! In the end, your code should look similar to this:
+
+```https
+<section>
+    <h3> Interests </h3>
+    <ul id="interests">
+        <li> Interest 1 </li>
+        <li> Interest 2 </li>
+        <li> Interest 3 </li>
+    </ul>
+</section>
+``` 
