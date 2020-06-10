@@ -18,6 +18,10 @@ This project walks through the creation of a nice-looking personal website over 
 - [Lesson 3 Steps](#lesson-3-steps)
     - [TODO 1: Update Nav Section](#todo-1-update-nav-section)
     - [TODO 2: Interests Section](#todo-2-interests-section)
+- [Lesson 4 Steps](#lesson-4-steps)
+    - [TODO 1: Add in Borders](#todo-1-add-in-borders)
+    - [TODO 2: Add in Background Colors](#todo-2-add-in-background-colors)
+    - [TODO 3: Change Text Colors](#todo-3-change-text-colors)
 
 ## Preliminary 
 
@@ -243,3 +247,40 @@ Lastly, put at least 3 **li** tags inside your **ul**, and use them to list some
     </ul>
 </section>
 ``` 
+
+## Lesson 4 Steps
+Today you'll finally be getting to CSS and beginning to customize the look of your website! No more boring black text and white backgrounds. Finally, you'll have a web page with some style!
+
+### TODO 1: Add in Borders
+To start with, go ahead and put in some borders for your different sections. To start with, put one around your `nav` section. Here's some example code for how you could style your **nav**, but absolutely feel free to change it up a bit!
+
+```css
+nav {
+    border: 4px gold ridge;
+}
+```
+
+After you've put a border around your **nav** try putting one around your `main` section and your `img`, too! 
+
+### TODO 2: Add in Background Colors
+Once you've got some nice, fancy borders, the next thing you'll want to do is give each section a background color. You can do this by just adding in the `background` property to your existing rules for the `nav` and `main`. For example, your **nav** rule might look something like *this* when you're done:
+
+```css
+nav {
+    border: 4px gold ridge;
+    background: black;
+}
+```
+
+After you've given good background colors to your **nav** and **main** sections, you might want to give a background to your **body** as well. You can do that the exact same way you would for any other section!
+
+### TODO 3: Change Text Colors
+Only one more thing to do for today, and that's change the text colors (if you want to)! By simply adding in the `color` property to any of your rules (or making new rules altogether), you can customize your text color as well! For instance, here's a **nav** rule that's got all of the above properties in it:
+
+```css
+nav {
+    border: 4px gold ridge;
+    background: black;
+    color: white;
+}
+```
