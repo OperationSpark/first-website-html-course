@@ -110,13 +110,13 @@ In the end, your code should look something like this:
 Today's lesson steps will help you divide your website into different sections. You'll also add in a few more bits of content and turn you image into a link, all to make your website a bit more engaging!
 
 ### TODO 1: Container Div
-To begin with, you'll want to wrap up everything in your **body** with a **div**. The reason for this won't become clear until you start adding in your CSS, but suffice it to say that eventually it will be used to make sure that your web page is centered and the right size.
+To begin with, you'll want to wrap up everything in your **body** with a **div**, and the **div** should have and id of "id=all-contents". The reason for this won't become clear until you start adding in your CSS, but suffice it to say that eventually it will be used to make sure that your web page is centered and the right size.
 
 When you're done, your code should look something like this:
 
 ```html
 <body>
-    <div>
+    <div id="all-contents">
         <!-- A bunch of stuff from yesterday. -->
     </div>
 </body>
