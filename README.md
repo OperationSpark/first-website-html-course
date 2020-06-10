@@ -223,6 +223,8 @@ Put custom `<section> ... </section>` tags inside of your "about" div. Make it l
 
 ```https
 <div id="about">
+    <h2> ... </h2>
+    <p> ... <p>
     <section>
     </section>
 </div>
