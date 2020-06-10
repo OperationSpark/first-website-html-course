@@ -96,7 +96,7 @@ In the end, your code should look something like this:
   <title>Website Title</title>
 </head>
 <body>
-  <h1> Website Title </title>
+  <h1> Website Title </h1>
   <a href="https://operationspark.org/"> Taught By </a>
   <h2> Your name </h2>
   <img src="image url">
