@@ -22,6 +22,10 @@ This project walks through the creation of a nice-looking personal website over 
     - [TODO 1: Add in Borders](#todo-1-add-in-borders)
     - [TODO 2: Add in Background Colors](#todo-2-add-in-background-colors)
     - [TODO 3: Change Text Colors](#todo-3-change-text-colors)
+- [Lesson 5 Steps](#lesson-5-steps)
+    - [TODO 1: Update Existing Rules](#todo-1-update-existing-rules)
+    - [TODO 2: New Main Section](#todo-2-new-main-section)
+    - [TODO 3: Likes and Dislikes](#todo-3-likes-and-dislikes)
 
 ## Preliminary 
 
@@ -284,3 +288,83 @@ nav {
     color: white;
 }
 ```
+
+## Lesson 5 Steps
+Now that you've seen more properties and learned about class selectors, you're ready to add in more style to your website! You'll also be adding in just a tad bit more HTML, just to show off the utility of class selectors.
+
+### TODO 1: Update Existing Rules
+First, you'll want to update some of the rules that you already have to include display and margin properties. You also might want to change the image size, if you haven't already done that on your own. 
+
+#### Step 1
+First, add in a rule for the `img` tag and give it `width` and `height` properties. For example:
+
+```css
+img {
+    width: 200px;
+    height: 200px;
+}
+```
+
+#### Step 2
+Find your `nav` and your `main` rules. For both of them, add in the property `display: flex;`.
+
+#### Step 3
+Lastly, add to your `main` rule the property `margin-top: 8px;`.
+
+### TODO 2: New Main Section
+You're going to need a new **main** section to really show off the power of class selectors, and it will also add some more content to your website! 
+
+Find where your already existing **main** ends, and add in another pair of `<main> ... </main>` tags right after that. Also, be sure to give *this* **main** section and id of "id=likes-and-dislikes".
+
+Once you've done that, put two more pairs of `<section> ... </section>` tags inside of your new **main**. The first **section** elements needs to have an id of "id=likes" and your second needs and id of "id=dislikes".
+
+At this point, your code should look like this:
+
+```html
+<div id="all-contents">
+    <nav> ... </nav>
+    <main>
+        ...
+    </main>
+    <main id="likes-and-dislikes">
+        <section id="likes">
+        </section>
+        <section id="dislikes">
+        </section>
+    </main>
+</div>
+```
+
+### TODO 3: Likes and Dislikes
+Okay, last, you need to put some content into your "likes" and "dislikes" sections. Let's start with the HTML for this.
+
+#### Step 1: HTML
+Both the "likes" and "dislikes" sections need the exact same things. 
+
+1. An `<h2> ... </h2>` element that says either "Likes" or "Dislikes"
+2. A `<ul> ... </ul>` element of class "class=preferences"
+3. Three `<li> ... </li>` elements inside of each **ul** element detailing your likes and dislikes
+
+For example, here's what the "likes" section might look like:
+
+```html
+<section id="likes">>
+    <h2> Likes </h2>
+    <ul class="preferences">
+        <li> Water </li>
+        <li> Rain </li>
+        <li> Puddles </li>
+    </ul>
+</section>
+```
+
+#### Step 2: CSS
+Okay, finally, put in some CSS rules for those like lists! Use a class selector for the rules. Here's a suggestion for what to try, but feel free to change it to suit your style!
+
+```css
+.preferences {
+    border: white 2px solid;
+    color: yellow;
+    padding-right: 16px;
+    padding-left: 16px;
+}
