@@ -26,6 +26,12 @@ This project walks through the creation of a nice-looking personal website over 
     - [TODO 1: Update Existing Rules](#todo-1-update-existing-rules)
     - [TODO 2: New Main Section](#todo-2-new-main-section)
     - [TODO 3: Likes and Dislikes](#todo-3-likes-and-dislikes)
+- [Lesson 6 Steps](#lesson-6-steps)
+    - [TODO 1: Center Your Preferences](#todo-1-center-your-preferences)
+    - [TODO 2: Customize Your Web Page](#todo-2-customize-your-web-page)
+- [Lesson 7 Steps](#lesson-7-steps)
+    - [TODO 1: Fix Margins and Padding](#todo-1-fix-margins-and-padding)
+    - [TODO 2: Global Customization](#todo-2-global-customization)
 
 ## Preliminary 
 
@@ -370,3 +376,49 @@ Okay, finally, put in some CSS rules for those like lists! Use a class selector 
     padding-right: 16px;
     padding-left: 16px;
 }
+```
+
+## Lesson 6 Steps
+Today is mostly a day to touch up your website and catch up on all the previous days' work. There is one new thing to do, though, and that's listed right below.
+
+### TODO 1: Center Your Preferences
+This is the only new thing you need to do. Your "likes" and "dislikes" lists aren't exactly centered as they are now, but there's an easy way to fix that.
+
+Today you learned about a way to center different elements using a specific value for the `margin` property. Go ahead and add that property into your `.preferences` rule, and that's it!
+
+### TODO 2: Customize Your Web Page
+If you've done absolutely everything up until this point, go ahead and start adding in your own features to your website (if you haven't already). This can include new CSS rules, new properties to existing CSS rules, or even adding in more elements to your HTML! 
+
+Do whatever you think you need to make your website be *your* website, and have fun with it!
+
+## Lesson 7 Steps
+Today you learned about id selectors. You've been putting them into your HTML all this time, but haven't really been doing much with them. Now it's time to change that!
+
+### TODO 1: Fix Margins and Padding
+You have several tags with id labels but no rules for them! Let's take care of three of them here. 
+
+**Make rules for the following:**
+
+1. The sidebar
+    * Selector: `#sidebar`
+    * Properties: `margin: auto; padding: 16px;`
+2. The about area
+    * Selector: `#about`
+    * Properties: `margin: auto;`
+3. The likes and dislikes area
+    * Selector: `#likes-and-dislikes`
+    * Properties: `padding: 16px;`
+
+### TODO 2: Global Customization
+There's still one more div with an id that hasn't been given a rule. You can do that here, but while you're at it, you might as well finish customizing your main background, assuming you haven't done it already.
+
+Start by adding in the following rule for your "all-content" div.
+
+```css
+#all-content {
+    max-width: 800px;
+    margin: auto;
+}
+```
+
+Once you've done that, put in a tiled (or singular) background image for you **body**. You don't need an id selector for this. Just use a tag type selector and combine that with what was covered today about backgrounds!
