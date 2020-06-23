@@ -32,6 +32,11 @@ This project walks through the creation of a nice-looking personal website over 
 - [Lesson 7 Steps](#lesson-7-steps)
     - [TODO 1: Fix Margins and Padding](#todo-1-fix-margins-and-padding)
     - [TODO 2: Global Customization](#todo-2-global-customization)
+- [Lesson 8 Steps](#lesson-8-steps)
+    - [TODO 1: Composite Selector Rules](#todo-1-composite-selector-rules)
+    - [TODO 2: Add in Shadows](#todo-2-add-in-shadows)
+
+<hr>
 
 ## Preliminary 
 
@@ -47,6 +52,9 @@ Remember to do this every day so you can always continue right where you left of
 To open your file after returning, click on "Open bin..." and find the entry with the title of your website on it. If you open it and it is not where you left off, then open up the most recent shapshot you made instead (it will always be right below the main entry for your website).
 
 If for some reason you don't have an entry for your website, you will need to open the copy you downloaded in the previous session, then copy and paste all of it directly into JS Bin. This should never happen, by the way, but just in case it does, that's what you need to do to get your work back on it.
+
+<hr>
+<hr>
 
 ## Lesson 1 Steps
 Today's lesson steps will add in several of the basic components of a website, including a title, some headers, a link, an image, and a paragraph.
@@ -115,6 +123,8 @@ In the end, your code should look something like this:
 </body>
 </html>
 ```
+
+<hr>
 
 ## Lesson 2 Steps
 Today's lesson steps will help you divide your website into different sections. You'll also add in a few more bits of content and turn you image into a link, all to make your website a bit more engaging!
@@ -209,6 +219,8 @@ Next, add something a little fun into your website. Go ahead and turn your image
 </a>
 ```
 
+<hr>
+
 ## Lesson 3 Steps
 Today's lesson is all about adding in some lists to your website. One will be an interests list, and one will be a navigation list. You already have the pieces of the navigation list, so you'll work on that first.
 
@@ -260,6 +272,8 @@ Lastly, put at least 3 **li** tags inside your **ul**, and use them to list some
 </section>
 ``` 
 
+<hr>
+
 ## Lesson 4 Steps
 Today you'll finally be getting to CSS and beginning to customize the look of your website! No more boring black text and white backgrounds. Finally, you'll have a web page with some style!
 
@@ -296,6 +310,8 @@ nav {
     color: white;
 }
 ```
+
+<hr>
 
 ## Lesson 5 Steps
 Now that you've seen more properties and learned about class selectors, you're ready to add in more style to your website! You'll also be adding in just a tad bit more HTML, just to show off the utility of class selectors.
@@ -378,6 +394,8 @@ Okay, finally, put in some CSS rules for those like lists! Use a class selector 
 }
 ```
 
+<hr>
+
 ## Lesson 6 Steps
 Today is mostly a day to touch up your website and catch up on all the previous days' work. There is one new thing to do, though, and that's listed right below.
 
@@ -391,6 +409,8 @@ If you've done absolutely everything up until this point, go ahead and start add
 
 Do whatever you think you need to make your website be *your* website, and have fun with it!
 
+<hr>
+
 ## Lesson 7 Steps
 Today you learned about id selectors. You've been putting them into your HTML all this time, but haven't really been doing much with them. Now it's time to change that!
 
@@ -401,13 +421,15 @@ You have several tags with id labels but no rules for them! Let's take care of t
 
 1. The sidebar
     * Selector: `#sidebar`
-    * Properties: `margin: auto; padding: 16px;`
+    * Properties: 
+        1. `margin: auto;` 
+        2. `padding: 16px;`
 2. The about area
     * Selector: `#about`
-    * Properties: `margin: auto;`
+    * Property: `margin: auto;`
 3. The likes and dislikes area
     * Selector: `#likes-and-dislikes`
-    * Properties: `padding: 16px;`
+    * Property: `padding: 16px;`
 
 ### TODO 2: Global Customization
 There's still one more div with an id that hasn't been given a rule. You can do that here, but while you're at it, you might as well finish customizing your main background, assuming you haven't done it already.
@@ -422,3 +444,58 @@ Start by adding in the following rule for your "all-content" div.
 ```
 
 Once you've done that, put in a tiled (or singular) background image for you **body**. You don't need an id selector for this. Just use a tag type selector and combine that with what was covered today about backgrounds!
+
+<hr>
+
+## Lesson 8 Steps
+Time for the last few CSS rules for your website! For today's steps, you'll be adding in a few rules with some properties you might not have seen before, but that's okay! You add them in the same way you do any other property, and we'll explain the ones you haven't seen before.
+
+### TODO 1: Composite Selector Rules
+There are three new rules you'll need to add here that use composite selectors. They are listed below.
+
+1. The nav header
+    * Selector: `nav h1`
+    * Properties: 
+        1. `display: flex;`
+        2. `align-items: center;`
+        3. `margin-left: 16px;`
+        4. `color: #FFFFFF;`
+        5. `flex: 1;`
+    * Explanation: The two properties `display: flex;` and `align-items: center;` work together to center your header vertically. The `margin-left: 16px;` property gives a little bit of space between your header and the left edge of your nav. Finally, the `flex: 1;` property actually shifts your list of links over to the right of the nav section.
+
+2. The nav list items
+    * Selector: `nav li`
+    * Properties: 
+        1. `display: inline-block;`
+        2. `padding: 10px;`
+    * Explanation: "inline-block" is another value that can be given to the **display** property. Its use is to display lists horizontally. It also has the side-effect of removing bullet points from a list.
+3. The nav links
+    * Selector: `nav a`
+    * Properties: 
+        1. `text-decoration: none;`
+        2. `color: purple;`
+    * Explanation: `text-decoration: none;` is a property that makes text lose many extra features, such as underline.
+
+### TODO 2: Add in Shadows
+And here it is, the absolute last TODO! For this, you'll want to add in shadows to your program. For starters, try putting a **box-shadow** in your **main** rule and a **text-shadow** in your **nav h1** rule.
+
+As a reminder, a shadow property with a single level of shadow look something like this:
+
+```css
+box-shadow: 4px 4px 8px blue;
+```
+
+while a shadow property with multiple levels of shadow have each shadow separated by ',' like this:
+
+```css
+text-shadow: 0px 0px 4px red, 0px 0px 8px blue;
+```
+
+<br>
+<hr>
+<hr>
+
+## Congratulations!
+That's it! You've now got a website with some nice content and tons of style features in it. Feel free to add as much more as you want or to tweak anything that you've already done. This is your website, so make sure it screams "YOU!"
+
+Once you're done, be sure to make a copy of your website by downloading it to your computer. That way, you can always migrate your web page somewhere else if you decide you want to try to host it somewhere other than on jsbin in the future.
