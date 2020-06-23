@@ -477,7 +477,7 @@ There are three new rules you'll need to add here that use composite selectors. 
     * Explanation: `text-decoration: none;` is a property that makes text lose many extra features, such as underline.
 
 ### TODO 2: Add in Shadows
-And here it is, the absolute last TODO! For this, you'll want to add in shadows to your program. For starters, try putting a **box-shadow** in your **main** rule and a **text-shadow** in your **nav h1** rule.
+And here it is, the absolute last TODO! For this, you'll want to add in shadows to your program. For starters, try putting a **box-shadow** in your **main** rule, another **box-shadow** in your **nav** rule, and a **text-shadow** in your **nav h1** rule.
 
 As a reminder, a shadow property with a single level of shadow look something like this:
 
