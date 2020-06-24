@@ -33,7 +33,7 @@ This project walks through the creation of a nice-looking personal website over 
     - [TODO 1: Fix Margins and Padding](#todo-1-fix-margins-and-padding)
     - [TODO 2: Global Customization](#todo-2-global-customization)
 - [Lesson 8 Steps](#lesson-8-steps)
-    - [TODO 1: Composite Selector Rules](#todo-1-composite-selector-rules)
+    - [TODO 1: Combinator Selector Rules](#todo-1-combinator-selector-rules)
     - [TODO 2: Add in Shadows](#todo-2-add-in-shadows)
 
 <hr>
@@ -450,8 +450,8 @@ Once you've done that, put in a tiled (or singular) background image for you **b
 ## Lesson 8 Steps
 Time for the last few CSS rules for your website! For today's steps, you'll be adding in a few rules with some properties you might not have seen before, but that's okay! You add them in the same way you do any other property, and we'll explain the ones you haven't seen before.
 
-### TODO 1: Composite Selector Rules
-There are three new rules you'll need to add here that use composite selectors. They are listed below.
+### TODO 1: Combinator Selector Rules
+There are three new rules you'll need to add here that use combinator selectors. They are listed below.
 
 1. The nav header
     * Selector: `nav h1`
